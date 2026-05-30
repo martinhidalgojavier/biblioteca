@@ -9,6 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * Entidad que representa un autor de la biblioteca.
@@ -23,6 +24,7 @@ public class Autor {
 
     private String nombre;
     private String nacionalidad;
+    @JsonIgnore
     @OneToMany(mappedBy = "autor", cascade = CascadeType.ALL)
     private List<Libro> libros;
 

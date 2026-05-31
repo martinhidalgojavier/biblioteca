@@ -1,5 +1,6 @@
 import { mostrarAutores } from "./views/autorView.js";
 import { mostrarGeneros } from "./views/generoView.js";
+import { mostrarLibros } from "./views/libroView.js";
 
 const botonesNav = document.querySelectorAll("nav button");
 
@@ -21,6 +22,8 @@ function cargarVista(vista) {
         mostrarAutores();
     } else if (vista === "generos") {
         mostrarGeneros();
+    } else if (vista === "libros") {
+        mostrarLibros();
     }
 }
 

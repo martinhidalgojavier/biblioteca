@@ -1,4 +1,5 @@
 import { mostrarAutores } from "./views/autorView.js";
+import { mostrarGeneros } from "./views/generoView.js";
 
 const botonesNav = document.querySelectorAll("nav button");
 
@@ -18,6 +19,8 @@ botonesNav.forEach(function (boton) {
 function cargarVista(vista) {
     if (vista === "autores") {
         mostrarAutores();
+    } else if (vista === "generos") {
+        mostrarGeneros();
     }
 }
 

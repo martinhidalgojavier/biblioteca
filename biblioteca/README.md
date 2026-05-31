@@ -4,6 +4,7 @@ Aplicación web completa para la gestión de una biblioteca, desarrollada como p
 
 El dominio gestiona cuatro entidades —**Autor, Género, Libro y Usuario**— con sus relaciones, ofreciendo un CRUD completo sobre cada una.
 
+ENLACE YOUTUBE: https://youtu.be/meKkHX9o0Lk
 ---
 
 ## 🧩 Modelo de dominio

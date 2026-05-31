@@ -24,7 +24,7 @@ public class Libro {
     private Long id;
 
     private String titulo;
-    private int anioPublicacion;
+    private Integer anioPublicacion;
 
     @ManyToOne
     @JoinColumn(name = "autor_id")
@@ -52,8 +52,8 @@ public class Libro {
     public String getTitulo() { return titulo; }
     public void setTitulo(String titulo) { this.titulo = titulo; }
 
-    public int getAnioPublicacion() { return anioPublicacion; }
-    public void setAnioPublicacion(int anioPublicacion) { this.anioPublicacion = anioPublicacion; }
+    public Integer getAnioPublicacion() { return anioPublicacion; }
+    public void setAnioPublicacion(Integer anioPublicacion) { this.anioPublicacion = anioPublicacion; }
 
     public Autor getAutor() { return autor; }
     public void setAutor(Autor autor) { this.autor = autor; }
